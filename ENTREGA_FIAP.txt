@@ -1,14 +1,12 @@
 FIAP - GLOBAL SOLUTION 2026.2
 Disciplina: Advanced Programming And Mobile Dev
 Projeto: UrbanGuard - Urban Risk Intelligence Platform
-Turma: 3EC - PREENCHER TURMA EXATA
+Turma: 3ECR
 
 INTEGRANTES (ate 3):
-1. NOME COMPLETO - RM: XXXXXX
-2. NOME COMPLETO - RM: XXXXXX
-3. NOME COMPLETO - RM: XXXXXX (remover esta linha caso sejam 2 integrantes)
+1. Nicolas Alvares - RM: 557271
+2. Millena Queiroz - RM: 558825
+3. Gabriel Yeshua - RM: 558273 
 
 LINK DO REPOSITORIO GITHUB:
-https://github.com/SEU-USUARIO/SEU-REPOSITORIO
-
-ATENCAO: preencher nomes, RMs e URL verdadeiros antes da entrega.
+https://github.com/niel1415/UrbanGuard_GS_2026_2

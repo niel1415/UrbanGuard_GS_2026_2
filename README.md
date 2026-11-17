@@ -5,8 +5,6 @@
 
 Uma plataforma demonstrativa para acompanhamento de riscos urbanos. O backend Java/Spring Boot recebe alertas de sensores simulados, fontes públicas simuladas e relatos comunitários, calcula sua prioridade, persiste os registros e transmite eventos em **tempo real via WebSocket**. Um app React Native/Expo exibe painel, ocorrências e notificações, permite novos relatos e se recupera de quedas na conexão.
 
-> **Importante:** Todos os dados iniciais e alertas simulados são **fictícios**, inclusive supostas bases públicas. O sistema é um protótipo educacional e **não deve ser usado para decidir sobre emergências reais**.
-
 ## Funcionalidades implementadas
 
 | Requisito do professor | Implementação |
@@ -20,7 +18,6 @@ Uma plataforma demonstrativa para acompanhamento de riscos urbanos. O backend Ja
 | Notificações | Centro de Alertas, faixa ao vivo e notificações **locais**, mediante permissão |
 | App resiliente | WebSocket com reconexão a cada 3s + reconsulta a cada 8s e aviso de desconexão |
 | Testes | JUnit (backend) e `node:test` (lógica do frontend) |
-| Apresentação da queda e reconexão | Roteiro em `APRESENTACAO.md` |
 
 ## Requisitos do computador (Windows)
 
@@ -155,22 +152,19 @@ UrbanGuard_GS_2026_2/
 ├── frontend/                # React Native/Expo, telas, notificações, testes Node
 ├── docs/                    # Arquitetura e coleção Postman
 ├── INICIAR_BACKEND.bat
-├── INICIAR_MOBILE.bat
-├── APRESENTACAO.md          # Roteiro falado e ações na tela
-├── CHECKLIST_ENTREGA.md
-├── ENTREGA_FIAP_PREENCHER.txt
+├── INICIAR_MOBILE.bat         
+├── ENTREGA_FIAP.txt
 └── README.md
 ```
 
 ## Equipe e publicação
 
-**Substituir antes de entregar** os campos abaixo pelos dados reais do grupo (até 3 integrantes):
 
-- Integrante 1: **NOME COMPLETO** | RM: **XXXXXX**
-- Integrante 2: **NOME COMPLETO** | RM: **XXXXXX**
-- Integrante 3 (se houver): **NOME COMPLETO** | RM: **XXXXXX**
+- Integrante 1: Nicolas Alvares | RM: 557271
+- Integrante 2: Millena Queiroz | RM: 558825
+- Integrante 3: Gabriel Yeshua  | RM: 558273
 
-O repositório do GitHub **ainda precisa ser criado/publicado**. Coloque o link real em `ENTREGA_FIAP_PREENCHER.txt`. Faça commits autênticos da equipe, ao longo da organização, validação e revisão do projeto; não simule histórico de outras pessoas.
+- repositorio : https://github.com/niel1415/UrbanGuard_GS_2026_2
 
 ## Arquitetura, proteção e limites
 
@@ -180,7 +174,3 @@ Camadas: **Controller → Service (análise) → Repository → H2**; eventos We
 - Dados de demonstração e CORS liberado são **somente para a rede de laboratório**. Os endpoints POST não têm autenticação e não devem ser expostos publicamente.
 - H2 em disco oferece simplicidade e persistência local; para escalabilidade em produção, migrar a PostgreSQL, usar filas/event bus, autenticação/autorização, HTTPS/WSS, limitação de requisições, auditoria e políticas LGPD.
 - O backend não consulta serviços públicos reais: as fontes públicas são explicitamente simuladas, conforme o enunciado permite para sensores e para uma demonstração acadêmica.
-
-## Como demonstrar ao professor
-
-Leia o roteiro pronto em **`APRESENTACAO.md`**. A demonstração requer os dois processos **rodando no computador**, não apenas abrir arquivos de código.
