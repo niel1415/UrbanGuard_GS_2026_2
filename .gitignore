@@ -1,0 +1,17 @@
+# Java / Maven
+backend/target/
+backend/data/
+*.class
+*.log
+# Expo / Node
+frontend/node_modules/
+frontend/.expo/
+frontend/dist/
+frontend/.env
+.expo/
+node_modules/
+# Local / editor
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

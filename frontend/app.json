@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "UrbanGuard",
+    "slug": "urbanguard-fiap",
+    "scheme": "urbanguard",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "br.com.fiap.urbanguard",
+      "permissions": [
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "plugins": [
+      "expo-notifications"
+    ],
+    "extra": {
+      "project": "FIAP Global Solution 2026.2"
+    }
+  }
+}

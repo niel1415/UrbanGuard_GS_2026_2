@@ -1,0 +1,133 @@
+{
+  "info": {
+    "name": "UrbanGuard GS 2026.2",
+    "description": "Requisições locais de demonstração. Nenhuma fonte é real.",
+    "_postman_id": "6592d7a4-8df3-4b37-a379-73900d202622",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/health",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "health"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Dashboard",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/dashboard",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "dashboard"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Eventos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/events",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "events"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Alertas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/alerts",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "alerts"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Simular",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/demo/simulate",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "demo",
+            "simulate"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Criar evento",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/events",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "events"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"eventType\": \"FLOOD\",\n  \"title\": \"Alerta Postman\",\n  \"description\": \"Teste da API REST com dados simulados\",\n  \"neighborhood\": \"Centro\",\n  \"city\": \"Santo André\",\n  \"sourceType\": \"SENSOR\",\n  \"origin\": \"Sensor de teste\",\n  \"confidence\": 0.9,\n  \"severity\": 4,\n  \"impactLevel\": 4\n}"
+        }
+      }
+    }
+  ]
+}
