@@ -166,6 +166,8 @@ UrbanGuard_GS_2026_2/
 
 - repositorio : https://github.com/niel1415/UrbanGuard_GS_2026_2
 
+-link do video : https://youtu.be/zcevcRYx0DY
+
 ## Arquitetura, proteção e limites
 
 Camadas: **Controller → Service (análise) → Repository → H2**; eventos WebSocket broadcast para o app. REST também serve como fallback de sincronização. Veja `docs/ARQUITETURA.md`.
@@ -174,3 +176,4 @@ Camadas: **Controller → Service (análise) → Repository → H2**; eventos We
 - Dados de demonstração e CORS liberado são **somente para a rede de laboratório**. Os endpoints POST não têm autenticação e não devem ser expostos publicamente.
 - H2 em disco oferece simplicidade e persistência local; para escalabilidade em produção, migrar a PostgreSQL, usar filas/event bus, autenticação/autorização, HTTPS/WSS, limitação de requisições, auditoria e políticas LGPD.
 - O backend não consulta serviços públicos reais: as fontes públicas são explicitamente simuladas, conforme o enunciado permite para sensores e para uma demonstração acadêmica.
+
